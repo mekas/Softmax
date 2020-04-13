@@ -1,4 +1,4 @@
 *.md*
 start.py~
 .git/*
-data/*
+
