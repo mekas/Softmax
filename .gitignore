@@ -1,6 +1,6 @@
 *.md*
 start.py~
-lib.py
+lib.py~
 .git/*
 data/*
 .gitignore~
