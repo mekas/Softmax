@@ -19,4 +19,4 @@ def print_statistics(images, t_images, labels, t_labels):
         print("class", i, "instances: ", np.sum(t_labels==i))
         
     print("there are", images.shape[1],"features")
-    return
+    return num_class

@@ -11,7 +11,8 @@ t_images = np.array(t_images)
 labels = np.array(labels)
 t_labels = np.array(t_labels)
 
-print_statistics(images, t_images, labels, t_labels)
+num_class = print_statistics(images, t_images, labels, t_labels)
+
 
 # add bias to the data (train & test)
 (m,n) = images.shape
@@ -20,3 +21,8 @@ images = np.hstack((bias,images))
 (m2,n2) = t_images.shape
 t_bias = np.ones((m2,1))
 t_images = np.hstack((t_bias,t_images))
+
+#add thetas
+theta = np.random.rand(num_class,n+1)
+print(theta.shape)
+
