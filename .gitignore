@@ -3,3 +3,4 @@ lib.py~
 .git/*
 data/*
 .gitignore~
+__pycache__
